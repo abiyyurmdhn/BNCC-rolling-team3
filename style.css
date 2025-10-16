@@ -1,1 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://images.pexels.com/photos/952670/pexels-photo-952670.jpeghttps://images.pexels.com/photos/952670/pexels-photo-952670.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-color: #cccccc;
+    color: white;
+}
 
+.login-box{
+    width: 350px;
+    padding: 30px;
+    background: #313131cc;
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    border-radius: 10px;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    margin: 30px 0;
+}
+.input-box input{
+    width: 100%;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+}
+
+.input-box label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 15px;
+    color: white;
+    pointer-events: none;
+    transition: 0.3s;
+}
+.input-box input:focus ~ label,
+.input-box input:valid ~ label{
+    top: -18px;
+    left: 0;
+    font-size: 12px;
+    color: #ffffff;
+}
+.remember-me{
+    text-align: left;
+    margin-bottom: 20px;
+}
+.remember-me input{
+    margin-right: 5px;
+}
+.remember-me label{
+    font-size: 14px;
+    color: white;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    background: #4a4a4a;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}   
+buttin:hover{
+    background: #000000;
+}
